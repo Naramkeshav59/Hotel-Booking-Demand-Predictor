@@ -99,7 +99,7 @@ pipeline {
                 script {
                     // AWS Deployment
                     echo 'AWS Deployment........'
-                    sh "aws ecs update-service --cluster mlops_ecs --service mlops_service --force-new-deployment"
+                    sh "aws ecs update-service --cluster mlops_ecs --service mlops_service --force-new-deployment --region us-east-1"
                 }
             }
         }
