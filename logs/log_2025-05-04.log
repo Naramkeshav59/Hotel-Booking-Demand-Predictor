@@ -1,0 +1,139 @@
+2025-05-04 14:55:29,494 - INFO - Data Ingestion has started
+2025-05-04 14:55:29,494 - INFO - Directory for Ingestion created
+2025-05-04 14:55:29,735 - INFO - Data loaded successfully with shape: (119386, 32)
+2025-05-04 14:55:29,796 - INFO - Data Splitted Sucessfully
+2025-05-04 14:55:30,541 - INFO - Training and testing data saved sucessfully
+2025-05-04 14:55:30,544 - INFO - Starting the data processing pipeline
+2025-05-04 14:55:30,544 - INFO - Data Processing Started
+2025-05-04 14:55:30,778 - INFO - Data read successful: Data shape = (95508, 32)
+2025-05-04 14:55:30,778 - INFO - Dropping Unnecessary Columns: ['days_in_waiting_list', 'booking_changes', 'arrival_date_year', 'country', 'reservation_status', 'assigned_room_type']
+2025-05-04 14:55:30,857 - INFO - Columns dropped successfully: Shape = (95508, 26)
+2025-05-04 14:55:30,873 - INFO - Handling outliers in columns: ['is_canceled', 'lead_time', 'arrival_date_week_number', 'arrival_date_day_of_month', 'stays_in_weekend_nights', 'stays_in_week_nights', 'adults', 'children', 'babies', 'is_repeated_guest', 'previous_cancellations', 'previous_bookings_not_canceled', 'agent', 'company', 'adr', 'required_car_parking_spaces', 'total_of_special_requests']
+2025-05-04 14:55:30,935 - INFO - Outliers handled successfully: Shape = (95508, 26)
+2025-05-04 14:55:30,935 - INFO - Handling null values
+2025-05-04 14:55:30,935 - INFO - Missing values handled successfully: Shape = (95508, 26)
+2025-05-04 14:55:31,461 - INFO - Processed data saved successfully
+2025-05-04 14:55:31,461 - INFO - Data processing pipeline completed successfully
+2025-05-04 14:55:31,461 - INFO - Starting feature engineering pipeline
+2025-05-04 14:55:31,461 - INFO - Loading processed data
+2025-05-04 14:55:31,651 - INFO - Data loaded successfully with shape: (95508, 26)
+2025-05-04 14:55:31,651 - INFO - Starting feature construction
+2025-05-04 14:55:31,667 - INFO - Feature construction completed
+2025-05-04 14:55:31,667 - INFO - Encoding categorical features
+2025-05-04 14:55:31,765 - INFO - Categorical features encoded successfully
+2025-05-04 14:55:31,765 - INFO - Starting feature selection using mutual information
+2025-05-04 14:55:33,398 - INFO - Mutual information scores:
+                           Feature  Mutual Information
+24         reservation_status_date            0.133062
+17                    deposit_type            0.130845
+18                           agent            0.076474
+1                        lead_time            0.076217
+21                             adr            0.040598
+23       total_of_special_requests            0.038708
+11                  market_segment            0.036382
+19                         company            0.019618
+12            distribution_channel            0.016835
+20                   customer_type            0.009934
+0                            hotel            0.009381
+6             stays_in_week_nights            0.006148
+3         arrival_date_week_number            0.004806
+16              reserved_room_type            0.002924
+2               arrival_date_month            0.002435
+4        arrival_date_day_of_month            0.001326
+10                            meal            0.001304
+5          stays_in_weekend_nights            0.000366
+9                           babies            0.000000
+8                         children            0.000000
+7                           adults            0.000000
+13               is_repeated_guest            0.000000
+14          previous_cancellations            0.000000
+15  previous_bookings_not_canceled            0.000000
+22     required_car_parking_spaces            0.000000
+25                    total_guests            0.000000
+2025-05-04 14:55:33,413 - INFO - Selected top features: ['reservation_status_date', 'deposit_type', 'agent', 'lead_time', 'adr', 'total_of_special_requests', 'market_segment', 'company', 'distribution_channel', 'customer_type', 'hotel', 'stays_in_week_nights']
+2025-05-04 14:55:33,414 - INFO - Saving engineered data
+2025-05-04 14:55:33,676 - INFO - Engineered data saved at ./artifacts\engineered_data\final_df.csv
+2025-05-04 14:55:33,676 - INFO - Feature engineering pipeline completed successfully
+2025-05-04 14:55:33,676 - INFO - End of feature engineering pipeline
+2025-05-04 14:55:33,901 - INFO - Data Loading for Model training
+2025-05-04 14:55:33,965 - INFO - Data load sucesfull
+2025-05-04 14:55:33,965 - INFO - Data splitting started
+2025-05-04 14:55:33,965 - INFO - ['reservation_status_date', 'deposit_type', 'agent', 'lead_time', 'adr', 'total_of_special_requests', 'market_segment', 'company', 'distribution_channel', 'customer_type', 'hotel', 'stays_in_week_nights']
+2025-05-04 14:55:33,981 - INFO - Data splitting done
+2025-05-04 14:55:33,981 - INFO - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-05-04 14:55:33,981 - INFO - Training model started
+2025-05-04 14:56:05,208 - INFO - Model training completed
+2025-05-04 14:56:05,208 - INFO - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 300}
+2025-05-04 14:56:05,216 - INFO - Model evaluation sterted
+2025-05-04 14:56:05,283 - INFO - Evaluation metrics : {'accuracy': 0.8747775102083551, 'precison': 0.8773715238084383, 'recall': 0.8747775102083551, 'f1_score': 0.8717915859158459, 'confusion_matrix': [[11458, 569], [1823, 5252]]}
+2025-05-04 14:56:05,304 - INFO - saving model
+2025-05-04 14:56:05,314 - INFO - Model saved sucesfully
+2025-05-04 15:09:52,769 - INFO - Data Ingestion has started
+2025-05-04 15:09:52,769 - INFO - Directory for Ingestion created
+2025-05-04 15:09:53,001 - INFO - Data loaded successfully with shape: (119386, 32)
+2025-05-04 15:09:53,033 - INFO - Data Splitted Sucessfully
+2025-05-04 15:09:53,817 - INFO - Training and testing data saved sucessfully
+2025-05-04 15:09:54,716 - INFO - Starting the data processing pipeline
+2025-05-04 15:09:54,716 - INFO - Data Processing Started
+2025-05-04 15:09:54,900 - INFO - Data read successful: Data shape = (95508, 32)
+2025-05-04 15:09:54,900 - INFO - Dropping Unnecessary Columns: ['days_in_waiting_list', 'arrival_date_year', 'booking_changes', 'country', 'assigned_room_type', 'reservation_status']
+2025-05-04 15:09:54,916 - INFO - Columns dropped successfully: Shape = (95508, 26)
+2025-05-04 15:09:54,916 - INFO - Handling outliers in columns: ['is_canceled', 'lead_time', 'arrival_date_week_number', 'arrival_date_day_of_month', 'stays_in_weekend_nights', 'stays_in_week_nights', 'adults', 'children', 'babies', 'is_repeated_guest', 'previous_cancellations', 'previous_bookings_not_canceled', 'agent', 'company', 'adr', 'required_car_parking_spaces', 'total_of_special_requests']
+2025-05-04 15:09:54,979 - INFO - Outliers handled successfully: Shape = (95508, 26)
+2025-05-04 15:09:54,979 - INFO - Handling null values
+2025-05-04 15:09:54,996 - INFO - Missing values handled successfully: Shape = (95508, 26)
+2025-05-04 15:09:55,536 - INFO - Processed data saved successfully
+2025-05-04 15:09:55,536 - INFO - Data processing pipeline completed successfully
+2025-05-04 15:25:08,376 - INFO - Starting feature engineering pipeline
+2025-05-04 15:25:08,376 - INFO - Loading processed data
+2025-05-04 15:25:08,542 - INFO - Data loaded successfully with shape: (95508, 26)
+2025-05-04 15:25:08,542 - INFO - Starting feature construction
+2025-05-04 15:25:08,542 - INFO - Feature construction completed
+2025-05-04 15:25:08,542 - INFO - Encoding categorical features using helper function
+2025-05-04 15:25:08,656 - INFO - Categorical features encoded successfully: ['hotel', 'arrival_date_month', 'meal', 'market_segment', 'distribution_channel', 'reserved_room_type', 'deposit_type', 'customer_type', 'reservation_status_date']
+2025-05-04 15:25:08,656 - INFO - Computing mutual information scores for all features
+2025-05-04 15:25:10,155 - INFO - Mutual information scores:
+                           Feature  Mutual Information
+24         reservation_status_date            0.133062
+17                    deposit_type            0.130845
+18                           agent            0.080473
+1                        lead_time            0.076217
+21                             adr            0.040598
+11                  market_segment            0.036382
+23       total_of_special_requests            0.035260
+19                         company            0.021358
+12            distribution_channel            0.016835
+20                   customer_type            0.009934
+0                            hotel            0.009381
+6             stays_in_week_nights            0.006148
+3         arrival_date_week_number            0.004806
+16              reserved_room_type            0.002924
+2               arrival_date_month            0.002435
+4        arrival_date_day_of_month            0.001326
+10                            meal            0.001304
+5          stays_in_weekend_nights            0.000366
+9                           babies            0.000000
+8                         children            0.000000
+7                           adults            0.000000
+13               is_repeated_guest            0.000000
+14          previous_cancellations            0.000000
+15  previous_bookings_not_canceled            0.000000
+22     required_car_parking_spaces            0.000000
+25                    total_guests            0.000000
+2025-05-04 15:25:10,155 - INFO - Saving engineered data
+2025-05-04 15:25:10,607 - INFO - Engineered data saved at ./artifacts\engineered_data\final_df.csv
+2025-05-04 15:25:10,607 - INFO - Feature engineering pipeline completed successfully
+2025-05-04 15:25:10,607 - INFO - End of feature engineering pipeline
+2025-05-04 15:25:14,294 - INFO - Data Loading for Model training
+2025-05-04 15:25:14,416 - INFO - Data load sucesfull
+2025-05-04 15:25:14,416 - INFO - Data splitting started
+2025-05-04 15:25:14,416 - INFO - ['hotel', 'lead_time', 'arrival_date_month', 'arrival_date_week_number', 'arrival_date_day_of_month', 'stays_in_weekend_nights', 'stays_in_week_nights', 'adults', 'children', 'babies', 'meal', 'market_segment', 'distribution_channel', 'is_repeated_guest', 'previous_cancellations', 'previous_bookings_not_canceled', 'reserved_room_type', 'deposit_type', 'agent', 'company', 'customer_type', 'adr', 'required_car_parking_spaces', 'total_of_special_requests', 'reservation_status_date', 'total_guests']
+2025-05-04 15:25:14,447 - INFO - Data splitting done
+2025-05-04 15:25:14,447 - INFO - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-05-04 15:25:14,447 - INFO - Training model started
+2025-05-04 15:25:50,847 - INFO - Model training completed
+2025-05-04 15:25:50,847 - INFO - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 15, 'n_estimators': 300}
+2025-05-04 15:25:50,851 - INFO - Model evaluation sterted
+2025-05-04 15:25:50,936 - INFO - Evaluation metrics : {'accuracy': 0.9638781279447178, 'precison': 0.9656356102153411, 'recall': 0.9638781279447178, 'f1_score': 0.9634768208331914, 'confusion_matrix': [[12012, 15], [675, 6400]]}
+2025-05-04 15:25:50,947 - INFO - saving model
+2025-05-04 15:25:50,947 - INFO - Model saved sucesfully

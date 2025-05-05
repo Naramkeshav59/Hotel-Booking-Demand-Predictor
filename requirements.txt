@@ -1,0 +1,16 @@
+numpy
+pandas
+setuptools
+scikit-learn
+lightgbm
+xgboost
+matplotlib
+mlflow
+flask
+pylint
+flake8
+black
+mysql-connector-python
+tensorboard
+torch
+dvc

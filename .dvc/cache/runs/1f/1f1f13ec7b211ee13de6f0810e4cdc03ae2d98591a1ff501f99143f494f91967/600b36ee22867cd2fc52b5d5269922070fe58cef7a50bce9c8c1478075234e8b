@@ -1,0 +1,20 @@
+cmd: python src/feature_engineering.py
+deps:
+- path: config/paths_config.py
+  hash: md5
+  md5: 0e1535395ec460e96e5a6851875adb81
+  size: 740
+- path: src/feature_engineering.py
+  hash: md5
+  md5: eec6c45338198230a35190a9cd2dcdac
+  size: 5657
+- path: utils/helpers.py
+  hash: md5
+  md5: 6ea5e10193fcdeb7637bca8045d2a91a
+  size: 345
+outs:
+- path: artifacts/engineered_data
+  hash: md5
+  md5: 5f208e44c17934f84b0044fe88a8f20d.dir
+  size: 7067004
+  nfiles: 1

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Hotel-Booking-Demand-Predictor/mlruns/784247499909019049/f1d0708eae0644938d2b1f35b0edf2a7/artifacts
+end_time: 1746418946059
+entry_point_name: ''
+experiment_id: '784247499909019049'
+lifecycle_stage: active
+run_id: f1d0708eae0644938d2b1f35b0edf2a7
+run_name: persistent-boar-803
+run_uuid: f1d0708eae0644938d2b1f35b0edf2a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746418899426
+status: 3
+tags: []
+user_id: naram

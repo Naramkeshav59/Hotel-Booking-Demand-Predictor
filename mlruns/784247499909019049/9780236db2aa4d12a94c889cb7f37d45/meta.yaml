@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Hotel-Booking-Demand-Predictor/mlruns/784247499909019049/9780236db2aa4d12a94c889cb7f37d45/artifacts
+end_time: 1746383675462
+entry_point_name: ''
+experiment_id: '784247499909019049'
+lifecycle_stage: active
+run_id: 9780236db2aa4d12a94c889cb7f37d45
+run_name: rare-mare-179
+run_uuid: 9780236db2aa4d12a94c889cb7f37d45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746383675333
+status: 4
+tags: []
+user_id: naram

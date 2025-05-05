@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Hotel-Booking-Demand-Predictor/mlruns/784247499909019049/a923f56e7b724db28d1dd0b5115d6c45/artifacts
+end_time: 1746383785274
+entry_point_name: ''
+experiment_id: '784247499909019049'
+lifecycle_stage: active
+run_id: a923f56e7b724db28d1dd0b5115d6c45
+run_name: tasteful-gull-532
+run_uuid: a923f56e7b724db28d1dd0b5115d6c45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746383747468
+status: 3
+tags: []
+user_id: naram

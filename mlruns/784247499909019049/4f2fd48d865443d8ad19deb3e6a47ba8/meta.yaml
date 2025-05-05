@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Hotel-Booking-Demand-Predictor/mlruns/784247499909019049/4f2fd48d865443d8ad19deb3e6a47ba8/artifacts
+end_time: 1746383606565
+entry_point_name: ''
+experiment_id: '784247499909019049'
+lifecycle_stage: active
+run_id: 4f2fd48d865443d8ad19deb3e6a47ba8
+run_name: polite-gnat-560
+run_uuid: 4f2fd48d865443d8ad19deb3e6a47ba8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746383606429
+status: 4
+tags: []
+user_id: naram
