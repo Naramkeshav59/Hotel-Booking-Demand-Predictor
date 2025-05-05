@@ -34,7 +34,7 @@ pipeline {
         stage('Linting Code') {
             steps {
                 script {
-                    // Linting Code
+                    // Linting Codedocker exec -u root -it jenkins-dind bash
                     echo 'Linting Code.........'
                     sh '''
                         set -e
@@ -44,6 +44,17 @@ pipeline {
                         black application.py main.py || echo "Black stage completed"
                     '''
                     
+                }
+            }
+        }
+
+
+        stage('Trivy Scanning') {
+            steps {
+                script {
+                    // Trivy Scanning
+                    echo 'Trivy Scanning.........'
+                    sh "trivy fs ./ --format table -o trivy-fs-report.html"
                 }
             }
         }
