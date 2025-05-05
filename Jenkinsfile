@@ -95,14 +95,23 @@ pipeline {
         }
 
         stage('AWS Deployment') {
-            steps {
-                script {
-                    // AWS Deployment
-                    echo 'AWS Deployment........'
-                    sh "aws ecs update-service --cluster mlops_ecs --service mlops_service --force-new-deployment --region us-east-1"
-                }
+    environment {
+        AWS_DEFAULT_REGION = 'us-east-1' // or your region
+    }
+
+    
+    steps {
+        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'mlops-aws-credentials']]) {
+            script {
+                echo 'AWS Deployment........'
+                sh '''
+                    aws ecs update-service --cluster mlops_ecs --service mlops_service --force-new-deployment
+                '''
             }
         }
+    }
+}
+
 
 
         
