@@ -99,9 +99,9 @@ pipeline {
         AWS_DEFAULT_REGION = 'us-east-1' // or your region
     }
 
-    
+
     steps {
-        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'mlops-aws-credentials']]) {
+        withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-cred']]) {
             script {
                 echo 'AWS Deployment........'
                 sh '''
