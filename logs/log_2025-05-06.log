@@ -1,0 +1,29 @@
+2025-05-06 09:13:41,415 - INFO - Starting ModelSelection pipeline
+2025-05-06 09:13:41,415 - INFO - Loading CSV file
+2025-05-06 09:13:41,622 - INFO - Data loaded and sampled successfully
+2025-05-06 09:13:41,622 - INFO - Splitting data
+2025-05-06 09:13:41,622 - INFO - Training and evaluation started
+2025-05-06 09:13:44,306 - INFO - Logistic Regression trained successfully. Metrics: Accuracy: 0.792778649921507, Precision: 0.8062486311425491, Recall: 0.792778649921507, F1 Score: 0.7760316582448499
+2025-05-06 09:13:44,713 - INFO - Random Forest trained successfully. Metrics: Accuracy: 0.901622187336473, Precision: 0.9064748288344383, Recall: 0.901622187336473, F1 Score: 0.8988276417560703
+2025-05-06 09:13:45,221 - INFO - Gradient Boosting trained successfully. Metrics: Accuracy: 0.8377812663526949, Precision: 0.8413687464773424, Recall: 0.8377812663526949, F1 Score: 0.8313315632543868
+2025-05-06 09:13:45,532 - INFO - AdaBoost trained successfully. Metrics: Accuracy: 0.7854526425954997, Precision: 0.786943530764618, Recall: 0.7854526425954997, F1 Score: 0.7737207764988512
+2025-05-06 09:13:48,604 - INFO - Support Vector Classifier trained successfully. Metrics: Accuracy: 0.6708529565672423, Precision: 0.6520138192956959, Recall: 0.6708529565672423, F1 Score: 0.6287143904187104
+2025-05-06 09:13:52,625 - INFO - K-Nearest Neighbors trained successfully. Metrics: Accuracy: 0.7509157509157509, Precision: 0.7448053777724107, Recall: 0.7509157509157509, F1 Score: 0.7435734470287315
+2025-05-06 09:13:52,687 - INFO - Naive Bayes trained successfully. Metrics: Accuracy: 0.7435897435897436, Precision: 0.7562459944312496, Recall: 0.7435897435897436, F1 Score: 0.7142037067410202
+2025-05-06 09:13:52,805 - INFO - Decision Tree trained successfully. Metrics: Accuracy: 0.8628990057561486, Precision: 0.8638269839971363, Recall: 0.8628990057561486, F1 Score: 0.8632827411856264
+2025-05-06 09:13:52,964 - INFO - LightGBM trained successfully. Metrics: Accuracy: 0.9712192569335426, Precision: 0.9723453395285946, Recall: 0.9712192569335426, F1 Score: 0.9709434888220546
+2025-05-06 09:13:54,507 - INFO - XGBoost trained successfully. Metrics: Accuracy: 0.9769754055468342, Precision: 0.9777724804138201, Recall: 0.9769754055468342, F1 Score: 0.9767956003051979
+2025-05-06 09:13:54,608 - INFO - ModelSelection pipeline completed successfully
+2025-05-06 12:01:18,462 - INFO - Data Loading for Model training
+2025-05-06 12:01:18,739 - INFO - Data load sucesfull
+2025-05-06 12:01:18,739 - INFO - Data splitting started
+2025-05-06 12:01:18,823 - INFO - ['hotel', 'lead_time', 'arrival_date_week_number', 'arrival_date_day_of_month', 'stays_in_weekend_nights', 'stays_in_week_nights', 'adults', 'children', 'babies', 'meal', 'market_segment', 'distribution_channel', 'is_repeated_guest', 'previous_cancellations', 'previous_bookings_not_canceled', 'reserved_room_type', 'deposit_type', 'agent', 'company', 'customer_type', 'adr', 'required_car_parking_spaces', 'total_of_special_requests', 'total_guests', 'year', 'month', 'day']
+2025-05-06 12:01:18,886 - INFO - Data splitting done
+2025-05-06 12:01:18,886 - INFO - Loaded hyperparamters :  {'learning_rate': [0.01, 0.05, 0.1], 'n_estimators': [100, 200, 300], 'max_depth': [5, 10, 15]}
+2025-05-06 12:01:18,902 - INFO - Training model started
+2025-05-06 12:02:04,942 - INFO - Model training completed
+2025-05-06 12:02:04,942 - INFO - Best hyperparamters are : {'learning_rate': 0.1, 'max_depth': 15, 'n_estimators': 300}
+2025-05-06 12:02:04,946 - INFO - Model evaluation sterted
+2025-05-06 12:02:05,145 - INFO - Evaluation metrics : {'accuracy': 0.9991100408334206, 'precison': 0.9991100208016008, 'recall': 0.9991100408334206, 'f1_score': 0.9991100278823013, 'confusion_matrix': [[12019, 8], [9, 7066]]}
+2025-05-06 12:02:05,158 - INFO - saving model
+2025-05-06 12:02:05,179 - INFO - Model saved sucesfully

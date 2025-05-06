@@ -105,7 +105,7 @@ pipeline {
             script {
                 echo 'AWS Deployment........'
                 sh '''
-                    aws ecs update-service --cluster mlops_ecs --service mlops_service --force-new-deployment
+                    aws ecs update-service --cluster mlops-ecs --service mlops_service --force-new-deployment
                 '''
             }
         }
