@@ -7,12 +7,12 @@ A full end-to-end Machine Learning pipeline to predict hotel booking cancellatio
 
 ## 📌 Table of Contents
 
-* [🚀 Project Overview](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#-project-overview)
-* [⚙️ Pipeline Stages](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#️-pipeline-stages)
-* [🛠️ Tech Stack](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#️-tech-stack)
-* [🏃‍♂️ How to Run](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#️-how-to-run)
-* [📊 Results](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#-results)
-* [👤 Author](https://github.com/Naramkeshav59/Hotel-Booking-Demand-Predictor/new/main#-author)
+* [🚀 Project Overview](#-project-overview)
+* [⚙️ Pipeline Stages](#️-pipeline-stages)
+* [🛠️ Tech Stack](#️-tech-stack)
+* [🏃‍♂️ How to Run](#️-how-to-run)
+* [📊 Results](#-results)
+* [👤 Author](#-author)
 
 ---
 
